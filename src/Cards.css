@@ -1,0 +1,94 @@
+/* Cards.css */
+.cards-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 16px;
+   justify-content: center;
+   
+   width: 50%;
+   margin-top: 4rem;
+
+  
+ }
+
+
+ .main-body{
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+   background-color: #e4e4e4;
+   height: fit-content;
+ }
+ 
+
+ 
+ .card {
+  position: relative; /* Needed for positioning the delete button */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0; /* Change background color on hover */
+  /* transform: scale(1.05);  */
+
+}
+ .card h2 {
+   font-size: 1.2em;
+   margin: 0 0 8px 0;
+ }
+ 
+ .card p {
+   font-size: 0.9em;
+   color: #555;
+ }
+ 
+ .delete-button {
+   position: absolute;
+   top: 2px;
+   right: 2px;
+   background: none;
+   border: none;
+   font-size: 1.4em;
+   color: #f00;
+   cursor: pointer;
+ }
+ 
+ .pagination {
+   display: flex;
+   justify-content: center;
+   margin-top: 16px;
+ }
+ 
+ .pagination button {
+   margin: 0 8px;
+   padding: 8px 16px;
+   border: none;
+   background-color: #007bff;
+   color: white;
+   cursor: pointer;
+   border-radius: 4px;
+ }
+ 
+ .pagination button:disabled {
+   background-color: #cccccc;
+   cursor: not-allowed;
+ }
+ 
+ .pagination span {
+   display: flex;
+   align-items: center;
+   margin: 0 8px;
+ }
+ 
+ .body{
+   background-color: #d3d3d3;
+ }
