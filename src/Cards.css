@@ -1,4 +1,4 @@
-/* Cards.css */
+
 .cards-container {
    display: flex;
    flex-wrap: wrap;
@@ -24,7 +24,7 @@
 
  
  .card {
-  position: relative; /* Needed for positioning the delete button */
+  position: relative; 
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
@@ -32,13 +32,13 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: white;
   cursor: pointer;
-  transition: box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
 }
 
 .card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  background-color: #f0f0f0; /* Change background color on hover */
-  /* transform: scale(1.05);  */
+  background-color: #f0f0f0;
+ 
 
 }
  .card h2 {
